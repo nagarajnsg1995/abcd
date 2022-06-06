@@ -3,14 +3,13 @@ public class EWage {
 
     public static void main(String[] args) {
         int ispresent = 1;
-        System.out.println("wellcome to employee wage");
-
+        int rateperhour = 20;
+        int mysalary = 0;
+        int hours = 8;
         double empcheck = Math.floor(Math.random() * 10) % 2;
-        if (empcheck == ispresent)
-            System.out.println("emp is present");
-        else
-            System.out.println("emp is abscent");
-
+        if (ispresent == empcheck)
+            mysalary = (rateperhour * hours);
+        System.out.println(mysalary);
     }
 }
 
